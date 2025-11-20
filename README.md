@@ -1,5 +1,5 @@
-# Classificação de Imagens com GLCM
-Este projeto implementa classificação de imagens utilizando **extração de características** seguida de **aprendizado de máquina**. O foco principal é o método **GLCM (Gray Level Co-occurrence Matrix)** para análise de textura.
+# Classificação de Imagens com GLCM (Gray Level Co-occurrence Matrix) +  KNN (Nearest Neighbors)
+Este projeto implementa classificação de imagens utilizando **extração de características** seguida de **aprendizado de máquina**. O foco principal é o método **GLCM (Gray Level Co-occurrence Matrix)** para análise de textura. Os resultados de treinamento e classificação foram gerados em conjunto com o classificador **KNN (K-Nearest Neighbors)**. 
 
 **Ambiente**: Google Colab com interface interativa
 
@@ -15,9 +15,10 @@ A **Matriz de Co-ocorrência de Níveis de Cinza** (GLCM) é uma técnica cláss
 2. **Extração de Propriedades**: Calcula medidas estatísticas da textura
 3. **Vetor de Características**: Gera um vetor numérico representando a textura da imagem
 
-| [Figura de github.com/ailich/GLCMTextures](https://github.com/ailich/GLCMTextures) |
-| ----- |
-| ![Descrição da imagem](https://github.com/user-attachments/assets/63a300ac-245d-4b69-93cd-03198c2d0574) |
+| Fonte: [Figura de github.com/ailich/GLCMTextures](https://github.com/ailich/GLCMTextures) | Fonte: [Figure de scikit-image.org](https://scikit-image.org/docs/0.25.x/auto_examples/features_detection/plot_glcm.html) |
+| ----- | ----- |
+| ![Imagem 1](https://github.com/user-attachments/assets/63a300ac-245d-4b69-93cd-03198c2d0574) | ![Imagem 2](https://github.com/user-attachments/assets/dd99db8a-6c94-4de6-a36b-618c5ef24a0f)
+
 
 
 ### Propriedades Extraídas
@@ -60,14 +61,14 @@ A **Matriz de Co-ocorrência de Níveis de Cinza** (GLCM) é uma técnica cláss
 
 ---
 
-## Classificadores
+## Classificadores Disponíveis
 
 | Classificador | Descrição |
 |---------------|-----------|
-| **Random Forest** | Ensemble de árvores de decisão |
-| **SVM** | Support Vector Machine com kernel linear |
-| **KNN** | K-Nearest Neighbors |
-| **MLP** | Multi-Layer Perceptron (rede neural) |
+| **KNN** | **K-Nearest Neighbors (Usado na classificação dos datasets)** |
+| Random Forest | Ensemble de árvores de decisão |
+| SVM | Support Vector Machine com kernel linear |
+| MLP | Multi-Layer Perceptron (rede neural) |
 
 ---
 
@@ -85,8 +86,8 @@ A **Matriz de Co-ocorrência de Níveis de Cinza** (GLCM) é uma técnica cláss
 6. Execute a célula principal para montar o Drive
 7. **Aba DATASET**: Selecione o dataset
 8. **Aba EXT. CARACTERÍSTICAS**: Marque "GLCM" e clique em "Extrair"
-9. **Aba TREINAMENTO**: Selecione classificador e "GLCM", clique em "Treinar"
-10. **Aba CLASSIFICAÇÃO**: Selecione classificador e "GLCM", clique em "Classificar"
+9. **Aba TREINAMENTO**: Selecione classificador e "KNN", clique em "Treinar"
+10. **Aba CLASSIFICAÇÃO**: Selecione classificador e "KNN", clique em "Classificar"
 
 ---
 
@@ -102,14 +103,23 @@ Para cada experimento, o sistema gera:
 
 ## Resultados Obtidos
 
-### Dataset: COVID-19 (GLCM)
+### Dataset: COVID-19 (GLCM + KNN)
+| Relatório de Classificação | Matriz de Confusão |
+| ------- | ------- |
+| ![graph_1_0](https://github.com/user-attachments/assets/597959f4-6e5b-45f0-9600-160794eb9e89) | ![graph_2_0](https://github.com/user-attachments/assets/5e4a83c3-c1bb-452a-b963-1148b334a46f) |
 
 ---
 
-### Dataset: Fracture (GLCM)
+### Dataset: Fracture (GLCM + KNN)
+| Relatório de Classificação | Matriz de Confusão |
+| ------- | ------- |
+| ![graph_1_1](https://github.com/user-attachments/assets/8df0227e-57a9-4c4c-99de-8ebc02fbe92a) | ![graph_2_1](https://github.com/user-attachments/assets/a9cf6d2e-fed2-462b-8a20-fd225d129733) |
 
 ---
 
-### Dataset: OCR (GLCM)
+### Dataset: OCR (GLCM + KNN)
+| Relatório de Classificação | Matriz de Confusão |
+| ------- | ------- |
+| ![graph_1_2](https://github.com/user-attachments/assets/9d90e74b-39bb-480d-82ec-d63a52ef9b81) | ![graph_2_2](https://github.com/user-attachments/assets/45f40594-1def-4db3-b7dc-ebbaef5a85dd) |
 
 ---
