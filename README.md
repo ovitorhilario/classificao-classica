@@ -23,6 +23,11 @@ A **Matriz de Co-ocorrência de Níveis de Cinza** (GLCM) é uma técnica cláss
 2. **Extração de Propriedades**: Calcula medidas estatísticas da textura
 3. **Vetor de Características**: Gera um vetor numérico representando a textura da imagem
 
+| [Figura de github.com/ailich/GLCMTextures](https://github.com/ailich/GLCMTextures) |
+| ----- |
+| ![Descrição da imagem](https://github.com/user-attachments/assets/63a300ac-245d-4b69-93cd-03198c2d0574) |
+
+
 ### Propriedades Extraídas
 
 | Propriedade | Descrição |
