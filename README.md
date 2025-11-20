@@ -1,15 +1,7 @@
 # Classificação de Imagens com GLCM
-## Abordagem Clássica de Visão Computacional
-
----
-
-## Descrição
-
 Este projeto implementa classificação de imagens utilizando **extração de características** seguida de **aprendizado de máquina**. O foco principal é o método **GLCM (Gray Level Co-occurrence Matrix)** para análise de textura.
 
 **Ambiente**: Google Colab com interface interativa
-
----
 
 ## Método de Extração: GLCM
 
@@ -46,13 +38,15 @@ A **Matriz de Co-ocorrência de Níveis de Cinza** (GLCM) é uma técnica cláss
 - **Níveis de Cinza**: 32 (quantização de 256 para melhor desempenho)
 - **Redução Dimensional**: PCA com 50 componentes principais
 
-### Por que GLCM?
+---
 
-✅ **Eficaz para textura**: Captura padrões espaciais locais  
-✅ **Invariante**: Robusto a mudanças de iluminação  
-✅ **Interpretável**: Propriedades têm significado físico claro  
-✅ **Versátil**: Funciona bem em imagens médicas, materiais, etc.
+## Tecnologias
 
+- **Python 3.x**
+- **OpenCV**: Processamento de imagens
+- **Scikit-image**: Implementação do GLCM
+- **Scikit-learn**: Classificadores e métricas
+- **NumPy**: Operações numéricas
 ---
 
 ## Datasets
@@ -105,18 +99,6 @@ Para cada experimento, o sistema gera:
 - **Recall**: Proporção de casos positivos identificados
 - **F1-Score**: Média harmônica entre precision e recall
 - **Acurácia**: Percentual de predições corretas
-
----
-
-## Tecnologias
-
-- **Python 3.x**
-- **OpenCV**: Processamento de imagens
-- **Scikit-image**: Implementação do GLCM
-- **Scikit-learn**: Classificadores e métricas
-- **NumPy**: Operações numéricas
-
----
 
 ## Resultados Obtidos
 
